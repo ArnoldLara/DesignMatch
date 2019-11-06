@@ -1,0 +1,9 @@
+<h1>Sign Up</h1>
+<%= bootstrap_form_for(@admin, :url => {:action => 'create'}, :method => 'post') do |f| %>
+  <%= f.text_field :company %>
+  <%= f.email_field :email %>
+  <%= f.password_field :password %>
+  <%= f.password_field :password %>
+  <%= f.submit "Sign up", class: "btn btn-success" %>
+<% end %>
+

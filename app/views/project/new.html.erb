@@ -1,0 +1,12 @@
+<h1>Create project</h1>
+<p>Please fulfill the following form</p>
+
+<br>
+
+<%= bootstrap_form_for(@project_new, :url => {:action => 'create', :admin_id => params['admin_id']}, :method => 'post') do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :description %>
+  <%= f.number_field :price %>
+  <%= f.submit "Create", class: "btn btn-success" %>
+<% end %>
+

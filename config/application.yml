@@ -1,0 +1,8 @@
+#base_url: "http://18.228.5.113:3000"
+
+#URL BASE PARA MODELO DE DESPLIEGUE C
+#base_url: "http://DespliegueC-1160777839.sa-east-1.elb.amazonaws.com:3000"
+
+#URL BASE PARA MODELO DE DESPLIEGUE D
+base_url: "http://WSModeloD-17523527.sa-east-1.elb.amazonaws.com:3000"
+

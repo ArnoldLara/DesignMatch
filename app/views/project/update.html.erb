@@ -1,0 +1,13 @@
+<h1>Update project</h1>
+<p>Please fulfill the following form</p>
+
+<br>
+
+<%= bootstrap_form_for(@project_new,
+                       :url => {:action => 'updateProject', :admin_id => @project_new.admin_id, :project_id => @project_new.id},
+                       :method => 'post') do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :description %>
+  <%= f.number_field :price %>
+  <%= f.submit "Update", class: "btn btn-primary" %>
+<% end %>

@@ -1,0 +1,13 @@
+<h1>Create design</h1>
+<p>Here you can submit a new design to the project <strong><%=@project.name %></strong></p>
+
+<br>
+
+<%= bootstrap_form_for(@design, :url => {:action => 'create', :project_id => @project.id}, :method => 'post') do |f| %>
+  <%= f.text_field :designer_name %>
+  <%= f.text_field :designer_last_name %>
+  <%= f.email_field :designer_email %>
+  <%= f.file_field :original_design %>
+  <%= f.number_field :price %>
+  <%= f.submit "Create", class: "btn btn-success" %>
+<% end %>
